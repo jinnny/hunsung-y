@@ -2328,7 +2328,6 @@ a {
 }
 
 .dashboard-table {
-  font-size: 30px;
   border: 1px solid #000;
 }
 .dashboard-table-area {
@@ -2394,6 +2393,9 @@ a {
 }
 .dashboard-table thead tr {
   background: #F4F5FA;
+}
+.dashboard-table thead tr th {
+  font-size: 16px;
 }
 .dashboard-table thead tr th.table-item {
   padding: 17px 0.52vw;
