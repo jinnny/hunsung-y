@@ -1,0 +1,180 @@
+.content__title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: normal;
+  color: $point-black;
+}
+.content-top-right {
+  text-align: right;
+}
+
+.content {
+  padding: 1.458vw;
+  min-height: calc(100vh - 70px);
+  box-sizing: border-box;
+  &-top {
+    .refresh-button {
+      margin-left: auto;
+      display: block;
+      margin-right: 0;
+    }
+  }
+  &-content {
+    margin-top: 16px;
+    background-color: #fff;
+  }
+}
+
+.dashboard-table {
+  &-area {
+    display: flex;
+    @include respond-to(1200) {
+      flex-wrap: wrap;
+    }
+  }
+  font-size: 16px;
+  border: 1px solid $deep-black;
+  &.w-25 {
+    width: 17%;
+    margin-right: 0.5%;
+    @include respond-to(1200) {
+      width: 30%;
+    }
+    @include respond-to(767) {
+      width: 100%;
+      margin: 0 0 10px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &.wide {
+      width: 23.5%;
+      @include respond-to(1200) {
+        & + .wide {
+          margin-right: 0;
+        }
+        width: 34.5%;
+      }
+      @include respond-to(767) {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+    }
+  }
+  .table-item {
+    padding: 0 0.52vw;
+    &.narrow-top {
+      padding: 0 0.52vw;
+    }
+    &.border-r-w {
+      border-right: 1px dotted #ddd;
+    }
+    &.border-r {
+      border-right: 1px dotted #ddd;
+    }
+  }
+  .border-b {
+    border-bottom: 1px dotted #ddd;
+  }
+  th {
+    font-weight: 600;
+  }
+  thead {
+    tr {
+      background: #F4F5FA;
+      th {
+        &.table-item {
+          padding: 17px 0.52vw;
+        }
+      }
+    }
+  }
+  .table-input-button {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+
+.table {
+  color: $neutral-black-32373-c;
+  font-size: 16px;
+  border-collapse: collapse;
+  width: 100%;
+  &-scroll-area {
+    @include respond-to(990) {
+      width: 100%;
+      overflow-x: scroll;
+      .table-scroll {
+        width: 900px;
+      }
+    }
+  }
+  &.with--input {
+    td {
+      height: auto;
+    }
+  }
+  & + .table__subject {
+    margin-top: 30px;
+  }
+  &__subject {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  th {
+    background-color: $neutral-gray-f-6-f-7-fc;
+    height: 65px;
+    font-weight: normal;
+  }
+  td {
+    height: 65px;
+    font-weight: 500;
+  }
+  .px-8 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .px-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  &.vertical {
+    text-align: left;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    tr {
+      border-bottom: 1px solid $neutral-gray-edeff-4;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    th {
+      width: 140px;
+      font-weight: 600;
+    }
+    td {
+
+    }
+  }
+
+}
+
+.input {
+  &__input {
+    border: 1px solid #bbb;
+    height: 50px;
+    width: 100%;
+    padding: 10px 12px;
+    &:focus {
+      outline: none;
+      border: 1px solid $point-black;
+    }
+  }
+}

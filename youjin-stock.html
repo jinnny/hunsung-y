@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>유신기업사</title>
+  <link rel="stylesheet" href="assets/scss/y-style.css">
+</head>
+<body>
+<header class="layout-header">
+  <div class="layout-header-top">
+    <div class="header-top-left js-header-top-left">
+      <h1 class="header-logo">유신기업사</h1>
+      <button class="header-menu-button js-header-menu-button">
+        <img src="assets/images/menu.png" alt="">
+      </button>
+    </div>
+    <div class="header-top-right">
+      <article class="container-component">
+        <div class="dashboard-right-container-component">
+          <div class="header-user-info js-select-box-blue-component">
+            <span class="header-user-info__user">관리자</span>
+            <button class="header-user-info__arrow"></button>
+            <div class="select-box-blue-option-container-component">
+              <div class="select-box-blue-option-component">
+                <a href="" class="header-select-box__link">로그아웃</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENT AREA -->
+<div class="content-area">
+  <!-- DRAWER AREA -->
+  <nav id="drawer-component" class="js-left-nav left-nav">
+    <ul class="left-nav-list">
+      <li class="left-nav__item alone js-left-nav-item current">
+        <a href="/" class="left-nav-first type--link ">
+          <i class="left-nav__icon"></i>
+          <strong class="left-nav__text left-nav__first-text">
+            Dashboard
+          </strong>
+        </a>
+        <div class="left-nav-depth-area js-left-nav-depth-area">
+          <ul class="left-nav-depth js-left-nav-depth">
+            <li class="left-nav-depth__item">
+              <a href="/" class="left-nav-depth__link left-nav__text">Dashboard</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="left-nav__item js-left-nav-item">
+        <div class="left-nav-first js-left-nav-first">
+          <i class="left-nav__icon"></i>
+          <strong class="left-nav__text left-nav__first-text">
+            Inventory
+          </strong>
+        </div>
+        <div class="left-nav-depth-area js-left-nav-depth-area">
+          <ul class="left-nav-depth js-left-nav-depth">
+            <li class="left-nav-depth__item title">
+              Inventory
+            </li>
+            <li class="left-nav-depth__item">
+              <a href="" class="left-nav-depth__link left-nav__text">재고관리</a>
+            </li>
+            <li class="left-nav-depth__item">
+              <a href="" class="left-nav-depth__link left-nav__text">재고관리 리뉴얼</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- DRAWER AREA END -->
+  <div class="right-content-area js-right-content-area">
+    <section id="content-component">
+      <article class="content">
+        <header class="content-top">
+          <h2 class="content__title">재고현황</h2>
+          <button class="renew-button hover--shadow only-icon refresh-button">
+            <img src="assets/images/refresh.png" alt="Refresh">
+          </button>
+        </header>
+        <div class="content-content dashboard-table-area">
+          <table class="dashboard-table w-25">
+            <colgroup>
+              <col style="width: 50%">
+              <col style="width: 25%">
+              <col style="width: 25%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="table-item border-r-w">안전대</th>
+                <th class="table-item border-r-w">벨트</th>
+                <th class="table-item">쥠줄</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b">
+                <th class="table-item border-r">88</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">108</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">가죽벨트</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">보조죔줄</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">보조대</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">점퍼선</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">방호관</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">공구대大</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr>
+                <th class="table-item border-r">공구대小</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="dashboard-table w-25 wide">
+            <colgroup>
+              <col style="width: 25%">
+              <col style="width: 25%">
+              <col style="width: 25%">
+              <col style="width: 25%">
+            </colgroup>
+            <thead>
+            <tr>
+              <th colspan="2" class="table-item border-r-w">접지장치</th>
+              <th colspan="2" class="table-item">수량주머니</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b">
+                <th colspan="2" class="table-item border-r narrow-top">배전용</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th colspan="2" class="table-item border-r narrow-top">전로용</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th rowspan="2" class="table-item border-r narrow-top">송전용<br/>765kv</th>
+                <th class="table-item border-r narrow-top">절연봉</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r narrow-top">접지선</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th rowspan="2" class="table-item border-r narrow-top">154kv</th>
+                <th class="table-item border-r narrow-top">절연봉</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r narrow-top">접지선</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th rowspan="2" class="table-item border-r narrow-top">345kv</th>
+                <th class="table-item border-r narrow-top">절연봉</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r narrow-top">접지선</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th rowspan="2" class="table-item border-r narrow-top">66kv</th>
+                <th class="table-item border-r narrow-top">절연봉</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r narrow-top">접지선</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th rowspan="2" class="table-item border-r narrow-top">발변용<br/>154kv</th>
+                <th class="table-item border-r narrow-top">절연봉</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r narrow-top">접지선</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th rowspan="2" class="table-item border-r narrow-top">345kv</th>
+                <th class="table-item border-r narrow-top">절연봉</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r narrow-top">접지선</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th rowspan="2" class="table-item border-r narrow-top">66kv</th>
+                <th class="table-item border-r narrow-top">절연봉</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r narrow-top">접지선</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="dashboard-table w-25 wide">
+            <colgroup>
+              <col style="width: 25%">
+              <col style="width: 25%">
+              <col style="width: 25%">
+              <col style="width: 25%">
+            </colgroup>
+            <thead>
+            <tr>
+              <th colspan="2" class="table-item border-r-w">접지장치</th>
+              <th colspan="2" class="table-item">수량주머니</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b">
+                <th colspan="2" class="table-item border-r narrow-top">반전봉</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th colspan="2" class="table-item border-r narrow-top">중장비</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th rowspan="2" class="table-item border-r narrow-top">변전용<br/>154kv</th>
+                <th class="table-item border-r narrow-top">절연봉</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r narrow-top">접지선</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th rowspan="2" class="table-item border-r narrow-top">345kv</th>
+                <th class="table-item border-r narrow-top">절연봉</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r narrow-top">접지선</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th rowspan="2" class="table-item border-r narrow-top">66kv</th>
+                <th class="table-item border-r narrow-top">절연봉</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r narrow-top">접지선</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th rowspan="2" class="table-item border-r narrow-top">작업용<br/>절연봉</th>
+                <th class="table-item border-r narrow-top">8m</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r narrow-top">10m</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th rowspan="2" class="table-item border-r narrow-top">지중용<br/>조작용</th>
+                <th class="table-item border-r narrow-top">1.5m</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r narrow-top">2.2m</th>
+                <td class="table-item border-r">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+                <td class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="dashboard-table w-25">
+            <colgroup>
+              <col style="width: 50%">
+              <col style="width: 25%">
+              <col style="width: 25%">
+            </colgroup>
+            <thead>
+            <tr>
+              <th class="table-item border-r-w">안전대</th>
+              <th colspan="2" class="table-item">수량주머니</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b">
+                <th class="table-item border-r">88</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">3m</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">4m</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">5m</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">6m</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">D.S 4m</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">D.S 6m</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <th class="table-item border-r">검측봉</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+              <tr>
+                <th class="table-item border-r">지상부</th>
+                <td colspan="2" class="table-item">
+                  <button class="table-input-button js-input-button"></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="dashboard-table w-25">
+            <colgroup>
+              <col style="width: 50%">
+              <col style="width: 25%">
+              <col style="width: 25%">
+            </colgroup>
+            <thead>
+            <tr>
+              <th class="table-item border-r-w">안전대</th>
+              <th colspan="2" class="table-item">수량주머니</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="border-b">
+              <th class="table-item border-r">YS 212<br/>활선경보기
+              </th>
+              <td class="table-item border-r">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+              <td class="table-item">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <th class="table-item border-r">YS 3154<br/>(154kv)
+              </th>
+              <td class="table-item border-r">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+              <td class="table-item">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <th class="table-item border-r">3345<br/>(345kv)
+              </th>
+              <td class="table-item border-r">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+              <td class="table-item">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <th class="table-item border-r">YSD 710<br/>(765kv)
+              </th>
+              <td class="table-item border-r">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+              <td class="table-item">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <th class="table-item border-r">YSN 154<br/>(신형)</th>
+              <td class="table-item border-r">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+              <td class="table-item">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <th class="table-item border-r">YSN 345<br/>(신형)
+              </th>
+              <td class="table-item border-r">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+              <td class="table-item">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <th class="table-item border-r">YSN 210<br/>다전압
+              </th>
+              <td class="table-item border-r">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+              <td class="table-item">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <th class="table-item border-r">수납대</th>
+              <td colspan="2" class="table-item">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+            </tr>
+            <tr>
+              <th class="table-item border-r">지하부</th>
+              <td colspan="2" class="table-item">
+                <button class="table-input-button js-input-button"></button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <div class="layer-popup js-layer-popup">
+    <article class="layer-popup-content js-layer-popup-content preview">
+      <header class="layer-popup-header">
+        <h2 class="layer-popup__title">
+          <span class="first-title js-first-title">
+            재고 변경
+          </span>
+        </h2>
+        <button class="layer-popup__close-button js-layer-popup-close" ><span class="blind">닫기</span></button>
+      </header>
+      <div class="layer-popup-content-content">
+        <div class="layer-popup-content-content-inner">
+          <div class="layer-popup-content-scroll">
+            <table class="table vertical">
+              <tr>
+                <th class="px-16">배전용</th>
+                <td class="px-16">
+                  <input type="number" inputmode="numeric" class="input__input" pattern="[0-9]*" />
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="layer-popup-button-area">
+            <button class="layer-popup-button cancel" type="button">취소</button>
+            <button class="layer-popup-button submit" type="button">저장</button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="layer-popup-bg"></div>
+  </div>
+
+</div>
+
+<!-- JAVASCRIPT FILES.. -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/sweetalert2.min.js"></script>
+
+<script>
+  // layerpopup 기본팝업
+  $('.js-input-button').on('click', function () {
+    //속도 제어
+    $('.js-layer-popup').fadeIn(400);
+    $('body').css('overflow', 'hidden')
+  })
+  //닫기클릭
+  $('.js-layer-popup .js-layer-popup-close').on('click', function () {
+    //속도 제어
+    $(this).parents('.js-layer-popup').fadeOut(400);
+    $('body').css('overflow', 'auto')
+  })
+</script>
+
+<!-- jQuery .. -->
+<script>
+
+  $(function () {
+    const headerHeight = 68
+    setLeftNavHeight()
+
+    if ($(window).width() <= 1200) {
+      setFoldMenu()
+    } else {
+      clearFoldMenu()
+    }
+
+    $(window).resize(function () {
+      setLeftNavHeight()
+      if ($(window).width() <= 1200) {
+        setFoldMenu()
+      } else {
+        clearFoldMenu()
+      }
+    })
+
+    $(window).scroll(function () {
+      setLeftNavHeight()
+    })
+
+    function setLeftNavHeight () {
+      $('.js-left-nav').css({
+        height: $(window).height() - headerHeight + 'px',
+      })
+    }
+
+    // 메뉴 클릭시
+    $('.js-left-nav-first').on('click', function () {
+      const targetLi = $(this).parent()
+      if (targetLi.children('.js-left-nav-depth-area').is(':visible')) {
+        // 보이는상태
+        $('.js-left-nav-item .js-left-nav-depth-area').slideUp(200)
+        $('.js-left-nav-item').removeClass('open')
+      } else {
+        //안보이는상태
+        $('.js-left-nav-item').removeClass('open')
+        $('.js-left-nav-item .js-left-nav-depth-area').slideUp(200)
+        targetLi.addClass('open')
+        $(this).next('.js-left-nav-depth-area').slideDown(200)
+      }
+    })
+
+    // 메뉴 확대/축소 버튼
+    $('.js-header-menu-button').on('click', function () {
+      $('.js-left-nav').toggleClass('fold')
+      $('.js-header-top-left').toggleClass('fold')
+      $('.js-right-content-area').toggleClass('wide')
+    })
+
+    // 왼쪽메뉴 접기
+    function setFoldMenu () {
+      $('.js-left-nav').addClass('fold')
+      $('.js-header-top-left').addClass('fold')
+      $('.js-right-content-area').addClass('wide')
+    }
+    // 왼쪽메뉴 펴기
+    function clearFoldMenu () {
+      $('.js-left-nav').removeClass('fold')
+      $('.js-header-top-left').removeClass('fold')
+      $('.js-right-content-area').removeClass('wide')
+    }
+    $('.js-select-box-blue-component').on('click', function () {
+      $(this).toggleClass('active')
+      $($(this).find('.select-box-blue-option-container-component')).toggle()
+    })
+  })
+</script>
+
+</body>
+</html>
