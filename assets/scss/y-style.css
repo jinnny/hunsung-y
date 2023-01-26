@@ -1,3 +1,4 @@
+@import "vendors/jquery.numberKeypad.css";
 .blind {
   position: absolute;
   overflow: hidden;
@@ -2469,6 +2470,7 @@ a {
 }
 .table.vertical th {
   width: 140px;
+  font-size: 24px;
   font-weight: 600;
 }
 .input__input {
@@ -2476,6 +2478,7 @@ a {
   height: 50px;
   width: 100%;
   padding: 10px 12px;
+  font-size: 24px;
 }
 .input__input:focus {
   outline: none;
@@ -2558,10 +2561,10 @@ a {
   padding: 19px 24px;
   display: flex;
   align-items: center;
-  height: 58px;
+  height: 64px;
 }
 .layer-popup-header .layer-popup__title {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
   color: #fff;
 }
@@ -2603,7 +2606,7 @@ a {
 .layer-popup-button {
   height: 50px;
   width: 35%;
-  font-size: 18px;
+  font-size: 20px;
   border: 1px solid #171717;
 }
 .layer-popup-button + .layer-popup-button {

@@ -615,7 +615,7 @@
               <tr>
                 <th class="px-16">배전용</th>
                 <td class="px-16">
-                  <input type="number" inputmode="numeric" class="input__input" pattern="[0-9]*" />
+                  <input type="text" class="input__input js-input-keypad" />
                 </td>
               </tr>
             </table>
@@ -635,6 +635,7 @@
 <!-- JAVASCRIPT FILES.. -->
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/sweetalert2.min.js"></script>
+<script src="assets/js/jquery.numberKeypad.js"></script>
 
 <script>
   // layerpopup 기본팝업
@@ -655,6 +656,9 @@
 <script>
 
   $(function () {
+    $('.js-input-keypad').numberKeypad();
+
+
     const headerHeight = 68
     setLeftNavHeight()
 

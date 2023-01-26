@@ -77,10 +77,10 @@
     padding: 19px 24px;
     display: flex;
     align-items: center;
-    height: 58px;
+    height: 64px;
     .layer-popup__ {
       &title {
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 600;
         color: $neutral-white-ffffff;
         span {
@@ -124,7 +124,7 @@
 .layer-popup-button {
   height: 50px;
   width: 35%;
-  font-size: 18px;
+  font-size: 20px;
   border: 1px solid $point-black;
   & + .layer-popup-button {
     margin-left: 2%;

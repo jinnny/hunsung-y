@@ -165,6 +165,7 @@
     }
     th {
       width: 140px;
+      font-size: 24px;
       font-weight: 600;
     }
     td {
@@ -180,6 +181,7 @@
     height: 50px;
     width: 100%;
     padding: 10px 12px;
+    font-size: 24px;
     &:focus {
       outline: none;
       border: 1px solid $point-black;
